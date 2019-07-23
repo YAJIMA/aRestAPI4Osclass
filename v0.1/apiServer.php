@@ -87,6 +87,15 @@ class apiServer {
     }
 
     /**
+     * @return mixed
+     * @url GET /categories/$l
+     */
+    public function getCategories($l = '')
+    {
+        return(Category::newInstance($l)->toTree());
+    }
+
+    /**
      * Get Category all lang
      * list all or single by categoryid
      * 

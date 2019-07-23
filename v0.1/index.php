@@ -24,5 +24,3 @@ $server->addClass('apiServer');
 
 $server->handle();
 
-?>
-

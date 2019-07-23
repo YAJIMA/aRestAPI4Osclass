@@ -11,13 +11,13 @@
  *
  * @author admin
  */
-define("RESTDAO_DEF_LANGUAGE", "en_US");
+define("RESTDAO_DEF_LANGUAGE", "ja_JA");
 
 class RestCategory extends Category {
 
     private static $instance;
 
-    public static function newInstance() {
+    public static function newInstance($l = RESTDAO_DEF_LANGUAGE) {
         if (!self::$instance instanceof self) {
             self::$instance = new self;
         }
